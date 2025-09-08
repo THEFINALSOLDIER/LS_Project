@@ -63,7 +63,7 @@ WHERE age BETWEEN 50 AND 64;
 ```
 ----
 ### Python 
-Under the python portion of this project i will be using pandas to clean and preprocess the data with pandas,While also perfroming EDA with Matplotlib/Seaborn
+Under the python portion of this project i used pandas to clean and preprocess the data with pandas,While also perfroming EDA with Matplotlib/Seaborn
 > These codes are carried out with the "retail_sales_dataset.csv" as found in the description 
 ----
 #### Codes
@@ -146,5 +146,8 @@ sns.scatterplot(x="Age", y="Total Amount", hue="Gender", data=df)
 plt.title("Age vs Income by Gender")
 plt.show()
 ```
-###Machine learning
+### Machine learning
+Under machiene learning wth the aid of python,I created a classification model with the aim of predicting customer churn 
+
+
 
