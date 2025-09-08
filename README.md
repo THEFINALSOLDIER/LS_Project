@@ -63,4 +63,88 @@ WHERE age BETWEEN 50 AND 64;
 ```
 ----
 ### Python 
+Under the python portion of this project i will be using pandas to clean and preprocess the data with pandas,While also perfroming EDA with Matplotlib/Seaborn
+> These codes are carried out with the "retail_sales_dataset.csv" as found in the description 
+----
+#### Codes
+``` python
+***Importing libraries***
+```
+``` python
+import numpy as np
+import pandas as pd 
+import matplotlib.pyplot as plt
+import seaborn as sns 
+```
+``` python
+***Importing dataset***
+```
+``` python
+df = pd.read_csv("retail_sales_dataset.csv")
+```
+``` python
+***Data cleaning & preprocessing***
+```
+``` python
+df.info()
+```
+``` python
+df.describe()
+```
+``` python
+df.head()
+```
+``` python
+print(df.isnull().sum)
+```
+``` python
+# converting data types
+df["Date"] = pd.to_datetime(df["Date"])
+```
+
+``` python
+***EDA***
+```
+``` python
+print(df.describe(include="all"))
+```
+``` python
+***Visualisation with seaborn/matplotlib***
+```
+``` python
+# Correlation heatmap
+plt.figure(figsize=(10,6))
+sns.heatmap(df.corr(numeric_only=True), annot=True, cmap="coolwarm")
+plt.title("Correlation Heatmap")
+plt.show()
+```
+``` python
+# Distribution of a numeric column
+plt.figure(figsize=(8,5))
+sns.histplot(df['Age'], bins=20, kde=True)
+plt.title("Age Distribution")
+plt.show()
+```
+``` python
+# Boxplot for numeric vs categorical
+plt.figure(figsize=(8,5))
+sns.boxplot(x="Gender", y="Total Amount", data=df)
+plt.title("Income by Gender")
+plt.show()
+```
+``` python
+# Count plot of a categorical column
+plt.figure(figsize=(8,5))
+sns.countplot(x="Gender", data=df)
+plt.title("Gender Distribution")
+plt.show()
+```
+``` python
+# Scatter plot for relationships
+plt.figure(figsize=(8,5))
+sns.scatterplot(x="Age", y="Total Amount", hue="Gender", data=df)
+plt.title("Age vs Income by Gender")
+plt.show()
+```
+###Machine learning
 
