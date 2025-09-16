@@ -272,7 +272,9 @@ This is the last portion of this repository, With the aid of PowerBi i created a
 + profit by product category
 + profit by Time (e.g Month,year,Quarters)
 
-> Note: the visuals were created with the "car dataset" csv file as found in the description
+> Note: The visuals were created with the "car dataset" csv file as found in the description
+
+> Note: The visuals and dashboard were uploaded in the description as "LS_academy.pdf" 
 
 
 
