@@ -267,7 +267,14 @@ print(cm)
 accuracy_score(y_test,y_pred)
 ```
 ### Power bi
-This is the last portion of this repository
+This is the last portion of this repository, With the aid of PowerBi i created a dashboard showing the 
++ Profit by country
++ profit by product category
++ profit by Time (e.g Month,year,Quarters)
+
+> Note: the visuals were created with the "car dataset" csv file as found in the description
+
+
 
 
 
